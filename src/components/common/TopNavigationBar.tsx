@@ -5,7 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 function TopNavigationBar() {
   return (
     <>
-      <div className=" w-full border-b-2 border-b-gray-200 p-2">
+      <div className="fixed w-full border-b-2 border-b-gray-200 p-2 backdrop-filter backdrop-blur-sm">
         <div className="m-auto ">
           <div className=" flex justify-between">
             <div>
