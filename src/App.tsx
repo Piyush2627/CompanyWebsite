@@ -1,11 +1,8 @@
-import TopNavigationBar from "./components/common/TopNavigationBar";
-import HomePage from "./components/pages/HomePage";
-
+import Routes from "./routers/Routes";
 function App() {
   return (
     <>
-      <TopNavigationBar />
-      <HomePage />
+      <Routes />
     </>
   );
 }
