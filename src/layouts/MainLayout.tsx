@@ -5,7 +5,9 @@ function MainLayout() {
   return (
     <div>
       <TopNavigationBar />
-      <Outlet />
+      <div className="pt-14">
+        <Outlet />
+      </div>
     </div>
   );
 }
