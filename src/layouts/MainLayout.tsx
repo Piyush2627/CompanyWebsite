@@ -1,13 +1,11 @@
 import { Outlet } from "react-router-dom";
-import TopNavigationBar from "../components/common/TopNavigationBar";
+import Footer from "../components/common/Footer";
 
 function MainLayout() {
   return (
     <div>
-      <TopNavigationBar />
-      <div className="pt-14">
-        <Outlet />
-      </div>
+      <Outlet />
+      <Footer />
     </div>
   );
 }

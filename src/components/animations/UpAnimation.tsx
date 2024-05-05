@@ -1,4 +1,4 @@
-import { inView, motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 interface UpAnimationProps {
   children: React.ReactNode | React.ReactNode[] | JSX.Element;
@@ -7,24 +7,25 @@ interface UpAnimationProps {
 }
 function UpAnimation({ children, duration, delay }: UpAnimationProps) {
   const divRef = useRef(null);
-  const isInView = useInView(divRef, { once: true });
+  const isInView = useInView(divRef);
   const upainmartions = useAnimation();
   useEffect(() => {
-    if (isInView) {
+    console.log(isInView);
+    if (isInView === true) {
       upainmartions.start("visible");
     }
-  }, [inView]);
+  }, [isInView]);
   return (
     <div ref={divRef}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
+          hidden: { opacity: 0, y: 30 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate="visible"
         transition={{ duration: duration, delay: delay }}>
-        {children}
+        <div>{children}</div>
       </motion.div>
     </div>
   );
