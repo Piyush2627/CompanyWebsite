@@ -18,7 +18,7 @@ function HomePage() {
       <div className="contaner m-auto ">
         <div className="h-screen flex items-center justify-center">
           <div>
-            <p className=" text-5xl lg:8xl text-center font-semibold font-Oswald text-white uppercase">
+            <p className=" text-5xl lg:text-8xl text-center font-semibold font-Oswald text-white uppercase">
               NeuralRoot
             </p>
             <p className=" text-transparent font-bold text-sm lg:text-xl font-OpenSans  w-2/3 text-center container m-auto bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 bg-clip-text">
@@ -28,7 +28,7 @@ function HomePage() {
         </div>
       </div>
       {/* description */}
-      <div className=" container m-auto space-y-6 lg:space-y-0 lg:flex justify-between px-6 lg:px-24 gap-12 mt-48">
+      <div className=" container m-auto space-y-6 lg:space-y-0 lg:flex justify-between px-6 lg:px-24 gap-12 mt-12 lg:mt-48">
         <div className="w-full">
           <p className="lg:text-3xl text-lg font-bold capitalize text-white">
             Let's Get Started!
@@ -53,18 +53,19 @@ function HomePage() {
           </p>{" "}
           <div className=" flex text-white space-x-8 py-6">
             <DashboardIcon sx={{ fontSize: 40 }} />
+
             <AcUnitIcon sx={{ fontSize: 40 }} />
             <AccountBalanceWalletIcon sx={{ fontSize: 40 }} />
           </div>
         </div>
       </div>
-      <div className="container m-auto px-24 mt-48 ">
+      <div className="container m-auto px-6 lg:px-24 mt-12 lg:mt-48 ">
         <p className=" text-white text-5xl text-center font-Oswald font-medium uppercase tracking-wider">
           Our services
         </p>
       </div>
-      <div className=" container m-auto px-12 lg:px-24 mt-8">
-        <div className="border border-cinder-900 shadow p-10 rounded-2xl  ">
+      <div className=" container m-auto px-6 lg:px-24 mt-8">
+        <div className="border border-cinder-900 shadow p-4 lg:p-10 rounded-2xl">
           <div className="flex gap-3 items-center">
             <div className="text-purple-500 ">
               <ArchitectureIcon sx={{ fontSize: 60 }} />
