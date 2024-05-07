@@ -10,9 +10,9 @@ function TopNavigationBar() {
 
   return (
     <>
-      <div className="fixed w-full border-b-2 border-b-gray-200 p-2 backdrop-filter backdrop-blur-sm">
+      <div className="fixed w-full border-b border-b-cinder-600r- p-4 backdrop-filter backdrop-blur-sm">
         <div className="m-auto">
-          <div className=" flex justify-between">
+          <div className=" flex justify-between ">
             <div className=" flex items-center gap-3">
               <div className="block lg:hidden">
                 <button className="text-white" onClick={toggleNavigationbar}>
@@ -22,21 +22,12 @@ function TopNavigationBar() {
               <div className=" pr-5 text-lg text-white">Logo</div>
             </div>
             <div>
-              <ul className="lg:flex justify-between gap-12 text-white items-center h-full hidden">
+              <ul className="lg:flex justify-between text-white items-center h-full  hidden gap-12 ">
                 <li>Home</li>
                 <li>About</li>
                 <li>Blog</li>
                 <li>Contect</li>
               </ul>
-            </div>
-            <div className="  items-center gap-4 flex ">
-              <div>
-                <img
-                  className="size-10 rounded-full"
-                  src="https://picsum.photos/200"
-                  alt="Rounded avatar"
-                />
-              </div>
             </div>
           </div>
         </div>

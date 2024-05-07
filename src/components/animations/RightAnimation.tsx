@@ -23,7 +23,8 @@ function RightAnimation({ children, duration, delay }: RightAnimationProps) {
         }}
         initial="hidden"
         animate="visible"
-        transition={{ duration: duration, delay: delay }}>
+        transition={{ duration: duration, delay: delay }}
+      >
         {children}
       </motion.div>
     </div>

@@ -12,28 +12,28 @@ function HomePage() {
   return (
     <>
       {" "}
-      <div className=" absolute h-full w-full -z-50">
-        <img src={bgimg} alt="" className="w-full h-screen" />
+      <div className=" absolute -z-50 h-full w-full">
+        <img src={bgimg} alt="" className="h-screen w-full" />
       </div>
       <div className="contaner m-auto ">
-        <div className="h-screen flex items-center justify-center">
+        <div className="flex h-screen items-center justify-center">
           <div>
-            <p className=" text-5xl lg:text-8xl text-center font-semibold font-Oswald text-white uppercase">
+            <p className=" text-center font-Oswald text-5xl font-semibold uppercase text-white lg:text-8xl">
               NeuralRoot
             </p>
-            <p className=" text-transparent font-bold text-sm lg:text-xl font-OpenSans  w-2/3 text-center container m-auto bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 bg-clip-text">
+            <p className=" container m-auto w-2/3 bg-gradient-to-r from-purple-600  via-pink-600 to-yellow-500 bg-clip-text text-center font-OpenSans text-sm font-bold text-transparent lg:text-xl">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
             </p>
           </div>
         </div>
       </div>
       {/* description */}
-      <div className=" container m-auto space-y-6 lg:space-y-0 lg:flex justify-between px-6 lg:px-24 gap-12 mt-12 lg:mt-48">
+      <div className=" container m-auto mt-12 justify-between gap-12 space-y-6 px-6 lg:mt-48 lg:flex lg:space-y-0 lg:px-24">
         <div className="w-full">
-          <p className="lg:text-3xl text-lg font-bold capitalize text-white">
+          <p className="text-lg font-bold capitalize text-white lg:text-3xl">
             Let's Get Started!
           </p>
-          <p className="text-gray-500 text-base lg:text-lg">
+          <p className="text-base text-gray-500 lg:text-lg">
             Ready to take your online presence to the next level? Get in touch
             with us today to discuss your project requirements and discover how
             we can help you achieve your digital goals. Whether you're starting
@@ -42,41 +42,40 @@ function HomePage() {
           </p>
         </div>
         <div className="w-full">
-          <p className="lg:text-3xl text-lgfont-bold capitalize text-white">
+          <p className="text-lgfont-bold capitalize text-white lg:text-3xl">
             Description
           </p>
-          <p className="text-gray-500 text-base lg:text-lg ">
+          <p className="text-base text-gray-500 lg:text-lg ">
             At NeuralRoots, we specialize in turning your digital dreams into
             reality. Our team of expert designers, developers, and digital
             strategists work tirelessly to create captivating websites that not
             only look stunning but also drive results for your business.
           </p>{" "}
-          <div className=" flex text-white space-x-8 py-6">
+          <div className=" flex space-x-8 py-6 text-white">
             <DashboardIcon sx={{ fontSize: 40 }} />
-
             <AcUnitIcon sx={{ fontSize: 40 }} />
             <AccountBalanceWalletIcon sx={{ fontSize: 40 }} />
           </div>
         </div>
       </div>
-      <div className="container m-auto px-6 lg:px-24 mt-12 lg:mt-48 ">
-        <p className=" text-white text-5xl text-center font-Oswald font-medium uppercase tracking-wider">
+      <div className="container m-auto mt-12 px-6 lg:mt-48 lg:px-24 ">
+        <p className=" text-center font-Oswald text-5xl font-medium uppercase tracking-wider text-white">
           Our services
         </p>
       </div>
-      <div className=" container m-auto px-6 lg:px-24 mt-8">
-        <div className="border border-cinder-900 shadow p-4 lg:p-10 rounded-2xl">
-          <div className="flex gap-3 items-center">
+      <div className=" container m-auto mt-8 px-6 lg:px-24">
+        <div className="rounded-2xl border border-cinder-900 p-4 shadow lg:p-10">
+          <div className="flex items-center gap-3">
             <div className="text-purple-500 ">
               <ArchitectureIcon sx={{ fontSize: 60 }} />
             </div>
-            <div className="text-transparent uppercase font-bold text-4xl font-Oswald bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 bg-clip-text">
+            <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 bg-clip-text font-Oswald text-4xl font-bold uppercase text-transparent">
               Design
             </div>
           </div>
           <div className=" ">
-            <div className="text-white w-full">
-              <ul className="mt-5 text-base lg:text-lg flex space-x-2 lg:space-x-12">
+            <div className="w-full text-white">
+              <ul className="mt-5 flex space-x-2 text-base lg:space-x-12 lg:text-lg">
                 <li>
                   <p className="text-2xl">UI / UX</p>
                 </li>
@@ -94,54 +93,54 @@ function HomePage() {
                 inventore rerum laudantium rem natus temporibus.
               </div>
             </div>
-            <div className="w-full mt-5">
-              <img src={Ui} alt="" className=" rounded-xl w-full h-96 " />
+            <div className="mt-5 w-full">
+              <img src={Ui} alt="" className=" h-96 w-full rounded-xl " />
             </div>
           </div>
         </div>
       </div>
-      <div className="container m-auto px-24 mt-12 ">
-        <p className=" text-white text-5xl text-center font-Oswald font-medium uppercase tracking-wider">
+      <div className="container m-auto mt-12 px-24 ">
+        <p className=" text-center font-Oswald text-5xl font-medium uppercase tracking-wider text-white">
           lorem{" "}
         </p>
       </div>
-      <div className="container m-auto px-24 mt-8 ">
-        <div className="border border-cinder-900 shadow p-10 rounded-2xl ">
+      <div className="container m-auto mt-8 px-24 ">
+        <div className="rounded-2xl border border-cinder-900 p-10 shadow ">
           <div className="grid grid-cols-4 grid-rows-3 gap-8">
-            <div className=" rounded-lg col-span-2 bg-cinder-600">
+            <div className=" col-span-2 rounded-lg bg-cinder-600">
               <img
                 src={GridImg1}
                 alt=""
-                className="rounded-lg  object-cover w-full h-72"
+                className="h-72  w-full rounded-lg object-cover"
               />
             </div>
             <div className=" rounded-lg bg-cinder-600">
               <img
                 src={GridImg2}
                 alt=""
-                className="rounded-lg  object-cover w-full h-72"
+                className="h-72  w-full rounded-lg object-cover"
               />
             </div>
-            <div className=" rounded-lg row-span-2 bg-cinder-600">
+            <div className=" row-span-2 rounded-lg bg-cinder-600">
               <img
                 src={GridImg3}
                 alt=""
-                className="rounded-lg object-cover w-full h-full"
+                className="h-full w-full rounded-lg object-cover"
               />
             </div>
-            <div className=" rounded-lg row-span-2 bg-cinder-500">
+            <div className=" row-span-2 rounded-lg bg-cinder-500">
               <img
                 src={GridImg3}
                 alt=""
-                className="rounded-lg object-cover w-full h-full"
+                className="h-full w-full rounded-lg object-cover"
               />
             </div>
-            <div className=" rounded-lg col-span-2  bg-cinder-400">
+            <div className=" col-span-2 rounded-lg  bg-cinder-400">
               {" "}
               <img
                 src={GridImg1}
                 alt=""
-                className="rounded-lg  object-cover w-full h-72"
+                className="h-72  w-full rounded-lg object-cover"
               />
             </div>
             <div className=" rounded-lg  bg-red-600">
@@ -149,26 +148,26 @@ function HomePage() {
                 <img
                   src={GridImg2}
                   alt=""
-                  className="rounded-lg  object-cover w-full h-72"
+                  className="h-72  w-full rounded-lg object-cover"
                 />
               </div>
             </div>
-            <div className=" rounded-lg col-span-2 bg-red-400">
+            <div className=" col-span-2 rounded-lg bg-red-400">
               <img
                 src={GridImg4}
                 alt=""
-                className="rounded-lg  object-cover w-full h-72"
+                className="h-72  w-full rounded-lg object-cover"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full   relative  mt-12">
-        <img src={Ui} className=" absolute  w-full h-full -z-50" alt="" />
+      <div className="relative   mt-12  w-full">
+        <img src={Ui} className=" absolute  -z-50 h-full w-full" alt="" />
         <div className="flex justify-between p-24">
           <div className=" container m-auto px-24">
-            <p className="text-xl font-Oswald text-white">heading </p>
-            <ul className=" space-y-12 text-white font-OpenSans text-4xl">
+            <p className="font-Oswald text-xl text-white">heading </p>
+            <ul className=" space-y-12 font-OpenSans text-4xl text-white">
               <li>lorem</li>
               <li>lorem</li>
               <li>lorem</li>

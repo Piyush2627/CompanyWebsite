@@ -24,7 +24,8 @@ function UpAnimation({ children, duration, delay }: UpAnimationProps) {
         }}
         initial="hidden"
         animate="visible"
-        transition={{ duration: duration, delay: delay }}>
+        transition={{ duration: duration, delay: delay }}
+      >
         <div>{children}</div>
       </motion.div>
     </div>

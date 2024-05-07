@@ -22,14 +22,16 @@ export const MovingLine = () => {
   return (
     <div
       className="max-w-4xl mx-auto flex flex-row space-x-10 items-start w-full "
-      ref={ref}>
+      ref={ref}
+    >
       <svg
         width="1"
         height="1567"
         viewBox="0 0 1 1567"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="flex-shrink-0">
+        className="flex-shrink-0"
+      >
         <path d={PATH} stroke="url(#paint0_linear_207_38)" />
         <defs>
           <linearGradient
@@ -38,7 +40,8 @@ export const MovingLine = () => {
             y1="-102.823"
             x2="1"
             y2="1566.02"
-            gradientUnits="userSpaceOnUse">
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stop-color="#3879E7" stop-opacity="0" />
             <stop offset="1" stop-color="#3879E7" />
           </linearGradient>
