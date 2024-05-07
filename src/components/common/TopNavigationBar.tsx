@@ -18,10 +18,6 @@ function TopNavigationBar() {
               </ul>
             </div>
             <div className="  items-center gap-4 flex ">
-              <div className="hidden sm:block">
-                <button>hello</button>
-              </div>
-
               <div>
                 <img
                   className="size-10 rounded-full"

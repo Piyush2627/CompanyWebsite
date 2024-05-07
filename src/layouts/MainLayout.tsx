@@ -7,7 +7,6 @@ function MainLayout() {
     <div>
       <TopNavigationBar />
       <Outlet />
-      <Footer />
     </div>
   );
 }
