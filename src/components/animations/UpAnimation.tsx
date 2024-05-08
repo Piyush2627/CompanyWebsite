@@ -1,32 +1,32 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 interface UpAnimationProps {
-  children: React.ReactNode | React.ReactNode[] | JSX.Element;
-  duration?: number;
-  delay?: number;
+  children: JSX.Element;
+  className: string;
 }
-function UpAnimation({ children, duration, delay }: UpAnimationProps) {
-  const divRef = useRef(null);
-  const isInView = useInView(divRef);
-  const upainmartions = useAnimation();
+function UpAnimation({ children, className }: UpAnimationProps) {
+  const divref = useRef(null);
+  const isInView = useInView(divref);
+  const mainControl = useAnimation();
   useEffect(() => {
-    console.log(isInView);
-    if (isInView === true) {
-      upainmartions.start("visible");
+    if (isInView) {
+      mainControl.start("visible");
+    } else {
+      mainControl.start("hidden");
     }
   }, [isInView]);
   return (
-    <div ref={divRef}>
+    <div ref={divref} className={className}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 30 },
+          hidden: { opacity: 0, y: 40 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
-        animate="visible"
-        transition={{ duration: duration, delay: delay }}
+        animate={mainControl}
+        transition={{ duration: 0.9 }}
       >
-        <div>{children}</div>
+        {children}
       </motion.div>
     </div>
   );
