@@ -3,27 +3,33 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import ArchitectureIcon from "@mui/icons-material/Architecture";
 import Ui from "../../assets/images/istockphoto-1189378904-1024x1024.jpg";
-import bgimg from "../../assets/images/18220884_v1016-b-09.jpg";
+// import bgimg from "../../assets/images/18220884_v1016-b-09.jpg";
 import GridImg1 from "../../assets/images/2151336616.jpg";
 import GridImg2 from "../../assets/images/istockphoto-1217882746-612x612.jpg";
 import GridImg3 from "../../assets/images/2151336506.jpg";
 import GridImg4 from "../../assets/images/2151336507.jpg";
+import { TextGenerateEffect } from "../animations/TextGenerateEffect";
 function HomePage() {
   return (
     <>
       {" "}
-      <div className=" absolute -z-50 h-full w-full">
+      {/* <div className=" absolute -z-50 h-full w-full">
         <img src={bgimg} alt="" className="h-screen w-full" />
-      </div>
+      </div> */}
       <div className="contaner m-auto ">
         <div className="flex h-screen items-center justify-center">
           <div>
-            <p className=" text-center font-Oswald text-5xl font-semibold uppercase text-white lg:text-8xl">
-              NeuralRoot
+            <p className=" m-4 text-center font-Oswald text-5xl font-semibold uppercase text-white lg:text-8xl">
+              Neural<span className="text-violet-600">Root</span>
             </p>
-            <p className=" container m-auto w-2/3 bg-gradient-to-r from-purple-600  via-pink-600 to-yellow-500 bg-clip-text text-center font-OpenSans text-sm font-bold text-transparent lg:text-xl">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+            <p className=" ext-center container m-auto  w-2/3 text-center font-OpenSans text-sm font-bold text-white  lg:text-4xl">
+              <TextGenerateEffect words="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam" />
             </p>
+            <div className=" text-center">
+              <button className=" mt-5 rounded-lg bg-cinder-950 px-6 py-4 font-bold uppercase text-white ring-1 ring-cinder-500">
+                Connect Use
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -75,7 +81,7 @@ function HomePage() {
           </div>
           <div className=" ">
             <div className="w-full text-white">
-              <ul className="mt-5 flex space-x-2 text-base lg:space-x-12 lg:text-lg">
+              <ul className="mt-5 flex space-x-2 text-base lg:space-x-6 lg:text-lg">
                 <li>
                   <p className="text-2xl">UI / UX</p>
                 </li>
