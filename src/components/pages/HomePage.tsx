@@ -5,10 +5,10 @@ import GridImg1 from "../../assets/images/2151336616.jpg";
 import GridImg2 from "../../assets/images/istockphoto-1217882746-612x612.jpg";
 import GridImg3 from "../../assets/images/2151336506.jpg";
 import GridImg4 from "../../assets/images/2151336507.jpg";
-import { TextGenerateEffect } from "../animations/TextGenerateEffect";
 import UpAnimation from "../animations/UpAnimation";
 import LeftAnimation from "../animations/LeftAnimation";
 import OurServicesContainer from "../common/OurServicesContainer";
+import { BackgroundGradient } from "../animations/BackgroundGradient";
 function HomePage() {
   return (
     <>
@@ -16,20 +16,24 @@ function HomePage() {
         <div className="flex h-screen items-center justify-center">
           <div>
             <UpAnimation className="">
-              <p className=" m-4 text-center font-Oswald text-5xl font-semibold uppercase text-white lg:text-8xl">
-                Neural<span className="text-violet-600">Root</span>
-              </p>
+              <div>
+                <p className=" m-4 text-center font-Oswald text-5xl font-semibold uppercase tracking-wider text-white lg:text-8xl">
+                  Neural
+                  <span className="font-normal text-violet-600">Root</span>
+                </p>
+                <p className="container m-auto w-2/3 text-center font-OpenSans text-2xl text-white">
+                  Welcome to NeuralRoots, where innovation meets technology to
+                  shape the future of digital solutions.
+                </p>
+                <div className=" container m-auto mt-10 w-44">
+                  <BackgroundGradient className=" text-center">
+                    <div className="rounded-lg bg-black py-4 text-white">
+                      Connect Use
+                    </div>
+                  </BackgroundGradient>
+                </div>
+              </div>
             </UpAnimation>
-            <TextGenerateEffect
-              className="text-center font-OpenSans text-4xl text-white"
-              words="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam"
-            />
-
-            <div className=" text-center">
-              <button className=" mt-5 rounded-lg bg-cinder-950 px-6 py-4 font-bold uppercase text-white ring-1 ring-cinder-500">
-                Connect Use
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -39,6 +43,7 @@ function HomePage() {
       <div className="mt-8">
         <OurServicesContainer />
       </div>
+
       {/* description */}
       <LeftAnimation>
         <div className=" container m-auto mt-12 justify-between gap-12 space-y-6 px-6 lg:mt-8 lg:flex lg:space-y-0 lg:px-24">
@@ -78,7 +83,7 @@ function HomePage() {
         </p>
       </div>
       <div className="container m-auto mt-8 px-5 lg:px-24 ">
-        <div className="rounded-2xl border border-cinder-900 p-10 shadow ">
+        <div className="rounded-2xl border border-cinder-900 p-10  ">
           <div className="grid grid-cols-4 grid-rows-3 gap-8">
             <div className=" col-span-2 rounded-lg bg-cinder-600">
               <img

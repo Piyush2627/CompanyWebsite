@@ -2,7 +2,7 @@ import { CardTab, TabSwitcher, TabContent } from "./OurServicesCard";
 
 export default function OurServicesContainer() {
   return (
-    <div className="container m-auto px-5 text-white shadow-lg lg:px-24">
+    <div className="container m-auto px-5 text-white lg:px-24">
       <div className="rounded-xl border  border-cinder-500 p-5">
         <CardTab>
           <div>
