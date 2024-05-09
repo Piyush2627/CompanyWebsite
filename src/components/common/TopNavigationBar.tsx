@@ -10,7 +10,7 @@ function TopNavigationBar() {
 
   return (
     <>
-      <div className="fixed w-full border-b border-b-cinder-600r- p-4 backdrop-filter backdrop-blur-sm">
+      <div className="fixed w-full   p-4 backdrop-blur-sm backdrop-filter">
         <div className="m-auto">
           <div className=" flex justify-between ">
             <div className=" flex items-center gap-3">
@@ -22,7 +22,7 @@ function TopNavigationBar() {
               <div className=" pr-5 text-lg text-white">Logo</div>
             </div>
             <div>
-              <ul className="lg:flex justify-between text-white items-center h-full  hidden gap-12 ">
+              <ul className="hidden h-full items-center justify-between gap-12  text-white lg:flex ">
                 <li>Home</li>
                 <li>About</li>
                 <li>Blog</li>
@@ -33,7 +33,7 @@ function TopNavigationBar() {
         </div>
         {isDrawerOpen && (
           <div className="text-white">
-            <ul className="lg:flex justify-between gap-12 text-white items-center h-full ">
+            <ul className="h-full items-center justify-between gap-12 text-white lg:flex ">
               <li>Home</li>
               <li>About</li>
               <li>Blog</li>

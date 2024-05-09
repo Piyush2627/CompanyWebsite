@@ -1,6 +1,8 @@
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import HeroBackgroundImage from "../../assets/images/Desktop - 1.png";
+import Logo from "../../assets/images/image-removebg-preview.png";
 import GridImg1 from "../../assets/images/2151336616.jpg";
 import GridImg2 from "../../assets/images/istockphoto-1217882746-612x612.jpg";
 import GridImg3 from "../../assets/images/2151336506.jpg";
@@ -12,6 +14,10 @@ import { BackgroundGradient } from "../animations/BackgroundGradient";
 function HomePage() {
   return (
     <>
+      <div className=" absolute -z-50 ">
+        <img src={HeroBackgroundImage} alt="" className="h-screen w-screen" />
+      </div>
+
       <div className="contaner m-auto ">
         <div className="flex h-screen items-center justify-center">
           <div>
@@ -37,7 +43,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className=" container m-auto px-12 text-center font-Oswald text-4xl font-bold capitalize text-white lg:px-24">
+      <div className=" container m-auto mt-8 px-12 text-center font-Oswald text-4xl font-bold capitalize text-white lg:px-24">
         Our services
       </div>
       <div className="mt-8">
