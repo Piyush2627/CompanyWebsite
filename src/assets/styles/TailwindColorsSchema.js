@@ -65,6 +65,19 @@ const TailwindColorsSchema = {
     900: "#7a2223",
     950: "#420d0d",
   },
+  mysin: {
+    50: "#fffcea",
+    100: "#fff8c5",
+    200: "#ffef87",
+    300: "#ffe148",
+    400: "#ffd01e",
+    500: "#fcb311",
+    600: "#df8500",
+    700: "#b95d04",
+    800: "#96480a",
+    900: "#7b3b0c",
+    950: "#471d01",
+  },
 };
 
 export default TailwindColorsSchema;

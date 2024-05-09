@@ -2,7 +2,6 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import HeroBackgroundImage from "../../assets/images/Desktop - 1.png";
-import Logo from "../../assets/images/image-removebg-preview.png";
 import GridImg1 from "../../assets/images/2151336616.jpg";
 import GridImg2 from "../../assets/images/istockphoto-1217882746-612x612.jpg";
 import GridImg3 from "../../assets/images/2151336506.jpg";
@@ -25,7 +24,7 @@ function HomePage() {
               <div>
                 <p className=" m-4 text-center font-Oswald text-5xl font-semibold uppercase tracking-wider text-white lg:text-8xl">
                   Neural
-                  <span className="font-normal text-violet-600">Root</span>
+                  <span className="font-normal text-violet-600 ">Root</span>
                 </p>
                 <p className="container m-auto w-2/3 text-center font-OpenSans text-2xl text-white">
                   Welcome to NeuralRoots, where innovation meets technology to
@@ -43,7 +42,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className=" container m-auto mt-8 px-12 text-center font-Oswald text-4xl font-bold capitalize text-white lg:px-24">
+      <div className=" text-mysin-400   container m-auto mt-8 bg-transparent px-12 font-Oswald text-4xl font-semibold capitalize  lg:px-24">
         Our services
       </div>
       <div className="mt-8">
@@ -52,7 +51,7 @@ function HomePage() {
 
       {/* description */}
       <LeftAnimation>
-        <div className=" container m-auto mt-12 justify-between gap-12 space-y-6 px-6 lg:mt-8 lg:flex lg:space-y-0 lg:px-24">
+        <div className=" container m-auto mt-12 justify-between  gap-12 space-y-6 px-6 lg:mt-8 lg:flex lg:space-y-0 lg:px-24">
           <div className="w-full">
             <p className="text-lg font-bold capitalize text-white lg:text-3xl">
               Let's Get Started!
