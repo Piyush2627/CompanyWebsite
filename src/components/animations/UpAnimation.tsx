@@ -2,7 +2,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 interface UpAnimationProps {
   children: JSX.Element;
-  className: string;
+  className?: string;
 }
 function UpAnimation({ children, className }: UpAnimationProps) {
   const divref = useRef(null);

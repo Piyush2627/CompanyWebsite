@@ -5,3 +5,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.material-icon-glow {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* adjust shadow size and opacity */
+  font-size: 1.2em; /* adjust font-size for desired glow size */
+}
