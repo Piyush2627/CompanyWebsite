@@ -11,8 +11,7 @@ import LeftAnimation from "../animations/LeftAnimation";
 import OurServicesContainer from "../common/OurServicesContainer";
 import { BackgroundGradient } from "../animations/BackgroundGradient";
 import { TracingBeam } from "../animations/TracingBeam";
-import CodeIcon from "@mui/icons-material/Code";
-import GlowIconContainer from "../common/GlowIconContainer";
+
 function HomePage() {
   return (
     <>
@@ -23,6 +22,7 @@ function HomePage() {
               className="h-screen w-screen"
             />
           </div> */}
+
       <div className="contaner m-auto ">
         <div className="flex h-screen items-center justify-center">
           <div>
@@ -47,9 +47,10 @@ function HomePage() {
             </UpAnimation>
           </div>
         </div>
-      </div>{" "}
+      </div>
+
       <TracingBeam>
-        <div className=" container   m-auto mt-8 bg-transparent px-12 font-Oswald text-4xl font-semibold capitalize text-mysin-400  lg:px-24">
+        <div className=" container   m-auto mt-8 bg-transparent px-12 font-Oswald text-4xl font-semibold capitalize text-white  lg:px-24">
           Our services
         </div>
         <div className="mt-8">
@@ -60,18 +61,6 @@ function HomePage() {
         <LeftAnimation>
           <div className=" container m-auto mt-12 justify-between  gap-12 space-y-6 px-6 lg:mt-8 lg:flex lg:space-y-0 lg:px-24">
             <div className="w-full">
-              <div className=" absolute left-10 z-40 bg-cinder-950">
-                {/* <div className="relative flex w-max items-center justify-center rounded-full">
-                  <div className="h-12 w-12 bg-violet-500 p-4 blur-2xl"></div>
-                  <CodeIcon className="absolute text-violet-500" />
-                </div> */}
-                <GlowIconContainer
-                  bgcolor=" bg-violet-500"
-                  iconColor="text-violet-500"
-                  materialIcon={<CodeIcon />}
-                />
-              </div>
-
               <p className="text-lg font-bold capitalize text-white lg:text-3xl">
                 Let's Get Started!
               </p>

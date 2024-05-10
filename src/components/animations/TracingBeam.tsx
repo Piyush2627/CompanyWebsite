@@ -2,7 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import { cn } from "../../utils/cn";
-
+import GlowIconContainer from "../common/GlowIconContainer";
+import CodeIcon from "@mui/icons-material/Code";
 export const TracingBeam = ({
   children,
   className,
@@ -26,14 +27,14 @@ export const TracingBeam = ({
   }, []);
 
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.7], [50, svgHeight]),
+    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
     {
       stiffness: 500,
       damping: 90,
     },
   );
   const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
+    useTransform(scrollYProgress, [0, 5], [50, svgHeight - 200]),
     {
       stiffness: 500,
       damping: 90,
@@ -43,12 +44,12 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("container relative mx-auto ", className)}
+      className={cn("container relative m-auto ", className)}
     >
-      <div className="absolute left-12 top-0 -z-50">
+      <div className="absolute -top-10 left-20 -z-20 ">
         <motion.div
           transition={{
-            duration: 0.1,
+            duration: 0.2,
             delay: 0.5,
           }}
           animate={{
@@ -57,8 +58,13 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="border-netural-200  flex items-center justify-center rounded-full border shadow-sm"
+          className=" ml-[27px] flex h-4 w-4 items-center justify-center rounded-full  shadow-sm"
         >
+          <GlowIconContainer
+            bgcolor=" bg-cinder-500"
+            iconColor="text-cinder-400"
+            materialIcon={<CodeIcon />}
+          />
           <motion.div
             transition={{
               duration: 0.2,
@@ -66,9 +72,9 @@ export const TracingBeam = ({
             }}
             animate={{
               backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
+                scrollYProgress.get() > 0 ? "white" : "var(--cinder-950)",
               borderColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
+                scrollYProgress.get() > 0 ? "white" : "var(--cinder-950)",
             }}
             className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
           />
@@ -81,7 +87,7 @@ export const TracingBeam = ({
           aria-hidden="true"
         >
           <motion.path
-            d={`M 1 ${svgHeight * 0} L 1 ${svgHeight * 1}`} // Straight line from top to bottom
+            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="#9091A0"
             strokeOpacity="0"
@@ -90,10 +96,10 @@ export const TracingBeam = ({
             }}
           ></motion.path>
           <motion.path
-            d={`M 1 ${svgHeight * 0} L 1 ${svgHeight * 1}`} // Straight line from top to bottom
+            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
-            strokeWidth="6  "
+            strokeWidth="6"
             className="motion-reduce:hidden"
             transition={{
               duration: 10,
@@ -110,8 +116,8 @@ export const TracingBeam = ({
             >
               <stop stopColor="#18CCFC" stopOpacity="0"></stop>
               <stop stopColor="#18CCFC"></stop>
-              <stop offset="0.9" stopColor="#6344F5"></stop>
-              <stop offset="0.5" stopColor="#AE48FF" stopOpacity="0"></stop>
+              <stop offset="0.325" stopColor="#6344F5"></stop>
+              <stop offset="1" stopColor="#AE48FF" stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>
         </svg>
