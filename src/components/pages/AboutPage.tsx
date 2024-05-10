@@ -1,5 +1,3 @@
-import { TracingBeam } from "../animations/TracingBeam";
-
 function AboutPage() {
   return (
     <div>
