@@ -19,7 +19,7 @@ function UpAnimation({ children, className }: UpAnimationProps) {
     <div ref={divref} className={className}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 40 },
+          hidden: { opacity: 0, y: 70 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"

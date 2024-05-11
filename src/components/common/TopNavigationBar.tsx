@@ -27,6 +27,7 @@ function TopNavigationBar() {
                 <li>About</li>
                 <li>Blog</li>
                 <li>Contect</li>
+                <li>Careers </li>
               </ul>
             </div>
           </div>
