@@ -28,7 +28,7 @@ function HomePage() {
           <div className="">
             <UpAnimation className="">
               <div>
-                <p className="mb-12 font-Oswald text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
+                <p className=" font-Oswald text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
                   Planting Seeds of <br />
                   <span className="bg-gradient-to-r from-violet-500 via-blue-400 to-blue-400 bg-clip-text text-transparent">
                     Innovation
