@@ -22,17 +22,17 @@ function HomePage() {
         <img src={MobileHeroImage} alt="" className="h-screen w-screen" />
       </div>
 
-      <div className="contaner m-auto px-4 lg:px-24">
-        <div className="flex h-screen items-center justify-center gap-4">
-          <div className=" h-36 w-1 bg-cinder-500">.</div>
+      <div className="contaner m-auto px-4 lg:px-24 ">
+        <div className=" flex h-screen items-center justify-center gap-4">
+          <div className=" h-36 w-1 bg-violet-500">.</div>
           <div>
             <UpAnimation className="">
               <div>
                 <p className="font-Oswald text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
-                  Planting Seeds of
-                  <p className="bg-gradient-to-r from-violet-500 via-blue-400 to-blue-400 bg-clip-text text-transparent">
+                  Planting Seeds of <br />
+                  <span className="bg-gradient-to-r from-violet-500 via-blue-400 to-blue-400 bg-clip-text text-transparent">
                     Innovation
-                  </p>
+                  </span>
                 </p>
                 <p className="mt- container mt-2 w-full font-OpenSans text-sm text-white lg:w-2/3 lg:text-xl">
                   At NeuralRoots, we specialize in turning your digital dreams

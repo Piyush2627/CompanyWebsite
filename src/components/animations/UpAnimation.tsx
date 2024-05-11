@@ -1,7 +1,7 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 interface UpAnimationProps {
-  children: JSX.Element;
+  children: JSX.Element | React.ReactNode;
   className?: string;
 }
 function UpAnimation({ children, className }: UpAnimationProps) {
