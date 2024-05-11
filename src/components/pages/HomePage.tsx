@@ -24,11 +24,11 @@ function HomePage() {
 
       <div className="contaner m-auto px-4 lg:px-24 ">
         <div className=" flex h-screen items-center justify-center gap-4">
-          <div className=" h-36 w-1 bg-violet-500">.</div>
-          <div>
+          <div className=" h-36 w-1 rounded bg-violet-500">.</div>
+          <div className="">
             <UpAnimation className="">
               <div>
-                <p className="font-Oswald text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
+                <p className="mb-12 font-Oswald text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
                   Planting Seeds of <br />
                   <span className="bg-gradient-to-r from-violet-500 via-blue-400 to-blue-400 bg-clip-text text-transparent">
                     Innovation
