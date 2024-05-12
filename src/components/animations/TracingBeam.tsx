@@ -26,12 +26,15 @@ export const TracingBeam = ({
     }
   }, []);
 
-  const y1 = useSpring(useTransform(scrollYProgress, [0, 8], [50, svgHeight]), {
-    stiffness: 500,
-    damping: 90,
-  });
+  const y1 = useSpring(
+    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
+    {
+      stiffness: 500,
+      damping: 90,
+    },
+  );
   const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 8], [50, svgHeight - 200]),
+    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
     {
       stiffness: 500,
       damping: 90,
@@ -43,7 +46,7 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("container relative m-auto ", className)}
     >
-      <div className="absolute -top-10 left-20 -z-20 ">
+      <div className="absolute -top-10 left-24 -z-30 ">
         <motion.div
           transition={{
             duration: 0.2,
@@ -57,11 +60,6 @@ export const TracingBeam = ({
           }}
           className=" ml-[27px] flex h-4 w-4 items-center justify-center rounded-full  shadow-sm"
         >
-          <GlowIconContainer
-            bgcolor=" bg-cinder-500"
-            iconColor="text-cinder-400"
-            materialIcon={<CodeIcon />}
-          />
           <motion.div
             transition={{
               duration: 0.2,
