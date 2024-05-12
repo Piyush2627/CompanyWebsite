@@ -2,8 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import { cn } from "../../utils/cn";
-import GlowIconContainer from "../common/GlowIconContainer";
-import CodeIcon from "@mui/icons-material/Code";
+
 export const TracingBeam = ({
   children,
   className,
