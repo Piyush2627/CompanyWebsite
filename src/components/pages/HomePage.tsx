@@ -2,24 +2,12 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import UpAnimation from "../animations/UpAnimation";
-import OurServicesContainer from "../common/OurServicesContainer";
 import { BackgroundGradient } from "../animations/BackgroundGradient";
 import OurservicesImagesCode from "../../assets/images/yancy-min-842ofHC6MaI-unsplash.jpg";
-import HeroBackgroundImage from "../../assets/images/15442885_5611294.png";
-import MobileHeroImage from "../../assets/images/Untitled-1.png";
-import ApiIcon from "@mui/icons-material/Api";
-import GlowIconContainer from "../common/GlowIconContainer";
 import { TracingBeam } from "../animations/TracingBeam";
 function HomePage() {
   return (
     <>
-      {/* <div className="absolute -z-50 hidden lg:block">
-        <img src={HeroBackgroundImage} alt="" className="h-screen w-screen" />
-      </div>
-      <div className="visible absolute -z-50 lg:hidden ">
-        <img src={MobileHeroImage} alt="" className="h-screen w-screen" />
-      </div> */}
-
       <TracingBeam>
         <div className=" container absolute left-24 -z-20 h-screen w-10 bg-cinder-950  ">
           .
