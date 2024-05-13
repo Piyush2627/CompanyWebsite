@@ -3,8 +3,10 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import UpAnimation from "../animations/UpAnimation";
 import { BackgroundGradient } from "../animations/BackgroundGradient";
-import OurservicesImagesCode from "../../assets/images/yancy-min-842ofHC6MaI-unsplash.jpg";
 import { TracingBeam } from "../animations/TracingBeam";
+import GlowIconContainer from "../common/GlowIconContainer";
+import OurServiceImg from "../../assets/images/fintech-ui-ux-design-1-960x614.jpg";
+import OurServicesContainer from "../common/OurServicesContainer";
 function HomePage() {
   return (
     <>
@@ -18,13 +20,13 @@ function HomePage() {
             <div className="">
               <UpAnimation className="">
                 <div>
-                  <p className=" font-Oswald text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
+                  <p className="   text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
                     Planting Seeds of <br />
                     <span className="bg-gradient-to-r from-violet-500 via-blue-400 to-blue-400 bg-clip-text text-transparent">
                       Innovation
                     </span>
                   </p>
-                  <p className="mt- container mt-2 w-full font-OpenSans text-sm text-white lg:w-2/3 lg:text-xl">
+                  <p className="mt- container mt-2 w-full   text-sm text-white lg:w-2/3 lg:text-xl">
                     At NeuralRoots, we specialize in turning your digital dreams
                     into reality. Our team of expert designers, developers, and
                     digital strategists work tirelessly to create captivating
@@ -47,37 +49,59 @@ function HomePage() {
         {/* description */}
         <UpAnimation>
           <div className="container m-auto mt-8 px-24 ">
-            <p className=" bg-cinder-950 font-Oswald text-5xl font-medium uppercase tracking-wider text-white">
-              Our services
-            </p>
-            <p className=" bg-cinder-950 text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, fuga.
-            </p>
+            <div className="flex ">
+              <GlowIconContainer
+                materialIcon={<DashboardIcon />}
+              ></GlowIconContainer>
+              <div>
+                <p className=" bg-cinder-950  text-5xl font-medium uppercase tracking-wider text-white">
+                  Our services
+                </p>{" "}
+                <div className=" bg-cinder-950 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem, fuga.
+                </div>
+              </div>
+            </div>
+
             <div className="pl-12">
               <div className=" mt-4 flex justify-between gap-3">
-                <div className="w-8/12 rounded-2xl bg-gray-800 text-white">
-                  <div className="p-12">
-                    <p className="text-center font-Oswald text-3xl font-medium">
-                      Web Development Services
-                    </p>
-                    <p className="text-center text-gray-500">
-                      Custom Website Development: We specialize in creating
-                      bespoke websites tailored to your unique business needs.
-                      Our designs are user-friendly, visually appealing, and
-                      optimized for performance.
-                    </p>
-                  </div>
-                  <div className=" relative w-full ">
-                    <img
-                      src={OurservicesImagesCode}
-                      className="h-48 w-10/12 rounded-es-xl rounded-se-2xl"
-                      alt=""
-                    />
+                <div className="w-8/12 rounded-2xl bg-gray-800 text-white ">
+                  <div className=" flex">
+                    <div>
+                      <div className="border-b border-gray-500 p-8">
+                        {" "}
+                        <p className="text-6xl tracking-wider">
+                          CodeCraft
+                          <br /> Creations
+                        </p>
+                        <p className="text-gray-500">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                      </div>
+                      <div className="p-8">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Cum ipsum fuga omnis quidem dolorem quam odio
+                        adipisci,
+                      </div>
+                    </div>
+                    <div className="border-l border-gray-500">
+                      <div>
+                        <img
+                          src={OurServiceImg}
+                          alt=""
+                          className="rounded-se-2xl"
+                        />
+                      </div>
+                      <div className="p-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maxime
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="w-4/12 rounded-2xl bg-gray-800 p-12 text-white">
-                  <p className="font-Oswald text-3xl">Mobile Application</p>
+                  <p className="  text-3xl">Mobile Application</p>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quae consequatur maiores nisi esse tempore quod. Eligendi,
@@ -89,7 +113,7 @@ function HomePage() {
             </div>
             <div className="pl-12">
               <div className=" mt-3 w-full rounded-2xl bg-gray-800 p-12">
-                <p className="font-Oswald text-3xl font-medium text-white">
+                <p className="  text-3xl font-medium text-white">
                   Web Application Services
                 </p>
                 <p className="text-white">
@@ -104,10 +128,10 @@ function HomePage() {
         <UpAnimation>
           <div className=" container m-auto mt-12 justify-between  gap-12 space-y-6 px-6 lg:mt-8 lg:flex lg:space-y-0 lg:px-24">
             <div className="w-full">
-              <p className="font-Oswald text-lg font-bold capitalize text-white lg:text-3xl">
+              <p className="  text-lg font-bold capitalize text-white lg:text-3xl">
                 Let's Get Started!
               </p>
-              <p className="font-OpenSans text-base text-gray-500 lg:text-lg">
+              <p className="  text-base text-gray-500 lg:text-lg">
                 Ready to take your online presence to the next level? Get in
                 touch with us today to discuss your project requirements and
                 discover how we can help you achieve your digital goals. Whether
@@ -116,10 +140,10 @@ function HomePage() {
               </p>
             </div>
             <div className="w-full">
-              <p className="font-Oswald text-lg font-bold capitalize text-white lg:text-3xl">
+              <p className="  text-lg font-bold capitalize text-white lg:text-3xl">
                 Description
               </p>
-              <p className="font-OpenSans text-base text-gray-500 lg:text-lg">
+              <p className="  text-base text-gray-500 lg:text-lg">
                 At NeuralRoots, we specialize in turning your digital dreams
                 into reality. Our team of expert designers, developers, and
                 digital strategists work tirelessly to create captivating

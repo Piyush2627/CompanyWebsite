@@ -9,11 +9,6 @@ export default {
   theme: {
     extend: {
       colors: TailwindColorSchemea,
-      fontFamily: {
-        Oswald: ["Oswald", "sans-serif"],
-        OpenSans: ["Open Sans", "sans-serif"],
-        Orbitron: ["Orbitron", "sans-serif"],
-      },
     },
   },
   plugins: [addVariablesForColors],
