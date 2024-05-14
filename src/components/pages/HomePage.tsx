@@ -6,18 +6,25 @@ import { BackgroundGradient } from "../animations/BackgroundGradient";
 import { TracingBeam } from "../animations/TracingBeam";
 import GlowIconContainer from "../common/GlowIconContainer";
 import OurServiceImg from "../../assets/images/fintech-ui-ux-design-1-960x614.jpg";
-import OurServicesContainer from "../common/OurServicesContainer";
+import MObilePng from "../../assets/images/mobilePng.png";
+import LeftAnimation from "../animations/LeftAnimation";
 function HomePage() {
   return (
     <>
       <TracingBeam>
-        <div className=" container absolute left-24 -z-20 h-screen w-10 bg-cinder-950  ">
+        <div className=" container absolute left-20 top-0 -z-20 h-96 w-10 bg-cinder-950  ">
           .
         </div>
         <div className="contaner m-auto px-4 lg:px-24 ">
-          <div className=" flex h-screen items-center justify-center gap-4">
-            <div className=" h-36 w-1 rounded bg-violet-500">.</div>
-            <div className="">
+          <div className=" relative flex h-screen items-center justify-center gap-4">
+            <div className=" absolute -left-[21px] top-48">
+              <GlowIconContainer materialIcon={<AcUnitIcon />} />
+            </div>
+
+            <div className="absolute left-0 top-60 h-52 w-[4.2px] bg-violet-500">
+              .
+            </div>
+            <div className="pl-12">
               <UpAnimation className="">
                 <div>
                   <p className="   text-4xl font-medium uppercase tracking-wider text-white lg:text-7xl">
@@ -48,11 +55,8 @@ function HomePage() {
 
         {/* description */}
         <UpAnimation>
-          <div className="container m-auto mt-8 px-24 ">
+          <div className="container m-auto mt-8 px-20 ">
             <div className="flex ">
-              <GlowIconContainer
-                materialIcon={<DashboardIcon />}
-              ></GlowIconContainer>
               <div>
                 <p className=" bg-cinder-950  text-5xl font-medium uppercase tracking-wider text-white">
                   Our services
@@ -64,10 +68,10 @@ function HomePage() {
               </div>
             </div>
 
-            <div className="pl-12">
+            <div className="">
               <div className=" mt-4 flex justify-between gap-3">
                 <div className="w-8/12 rounded-2xl bg-gray-800 text-white ">
-                  <div className=" flex">
+                  <div className="flex">
                     <div>
                       <div className="border-b border-gray-500 p-8">
                         {" "}
@@ -111,15 +115,23 @@ function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="pl-12">
-              <div className=" mt-3 w-full rounded-2xl bg-gray-800 p-12">
-                <p className="  text-3xl font-medium text-white">
-                  Web Application Services
-                </p>
-                <p className="text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Laborum, blanditiis.
-                </p>
+            <div className="">
+              <div className=" relative mt-3 w-full rounded-2xl bg-gray-800 p-12">
+                <LeftAnimation>
+                  <div className=" absolute  right-0 z-50 w-44">
+                    <img src={MObilePng} alt="" className="" />
+                  </div>
+                </LeftAnimation>
+
+                <div className="w-6/12">
+                  <p className=" text-6xl font-medium tracking-wider text-white">
+                    Web Application Services
+                  </p>
+                  <p className="text-white">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laborum, blanditiis.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
