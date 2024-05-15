@@ -8,7 +8,7 @@ function OurServicesContainer() {
               Our <br />
               Services
             </p>
-            <p className="text-1xl font-medium tracking-widest dark:text-gray-700 ">
+            <p className="text-1xl font-medium tracking-wider dark:text-gray-700 ">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
               libero cum,
             </p>
