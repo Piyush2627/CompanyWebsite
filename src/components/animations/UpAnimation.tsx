@@ -3,8 +3,9 @@ import { useEffect, useRef } from "react";
 interface UpAnimationProps {
   children: JSX.Element | React.ReactNode;
   className?: string;
+  delay: number;
 }
-function UpAnimation({ children, className }: UpAnimationProps) {
+function UpAnimation({ children, className, delay }: UpAnimationProps) {
   const divref = useRef(null);
   const isInView = useInView(divref);
   const mainControl = useAnimation();
@@ -19,12 +20,12 @@ function UpAnimation({ children, className }: UpAnimationProps) {
     <div ref={divref} className={className}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 70 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { y: 70 },
+          visible: { y: 0 },
         }}
         initial="hidden"
         animate={mainControl}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.9, delay: delay }}
       >
         {children}
       </motion.div>

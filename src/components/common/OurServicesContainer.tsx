@@ -14,7 +14,7 @@ function OurServicesContainer() {
               libero cum,
             </p>
           </div>
-          <UpAnimation>
+          <UpAnimation delay={0}>
             <div className=" mr-40 mt-12">
               <aside className=" w-full max-w-lg rounded-lg bg-gray-900 p-6 font-mono text-white shadow-lg shadow-violet-400">
                 <div className="flex items-center justify-between">
