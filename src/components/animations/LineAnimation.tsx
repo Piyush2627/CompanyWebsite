@@ -6,6 +6,7 @@ interface LineAnimationProps {
   delay: number;
   height: number;
   tailwindBackgroundColor: string;
+  beamcolor: string;
 }
 
 function LineAnimation({
@@ -13,6 +14,7 @@ function LineAnimation({
   delay,
   height,
   tailwindBackgroundColor,
+  beamcolor,
 }: LineAnimationProps) {
   const divref = useRef(null);
   const isInView = useInView(divref);
@@ -28,15 +30,12 @@ function LineAnimation({
 
   return (
     <div className="relative">
-      <div
-        className={` w-[1px] bg-gradient-to-b from-violet-500 via-blue-400 to-blue-400`}
-        style={{ height: `${height}px` }}
-      >
+      <div className={` w-1  ${beamcolor} `} style={{ height: `${height}px` }}>
         .
       </div>
-      <div ref={divref} className={`${className} rotate-180`}>
+      <div ref={divref} className={` rotate-180`}>
         <motion.div
-          className={`absolute top-0 w-[1px] ${tailwindBackgroundColor}`}
+          className={`absolute top-0 w-1 ${tailwindBackgroundColor}`}
           style={{ height: `${height}px` }}
           variants={{
             hidden: { opacity: 1, height: height },

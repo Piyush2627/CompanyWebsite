@@ -20,8 +20,8 @@ function UpAnimation({ children, className, delay }: UpAnimationProps) {
     <div ref={divref} className={className}>
       <motion.div
         variants={{
-          hidden: { y: 70 },
-          visible: { y: 0 },
+          hidden: { opacity: 0, y: 80 },
+          visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControl}

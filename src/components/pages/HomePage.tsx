@@ -6,10 +6,12 @@ import EarbudsIcon from "@mui/icons-material/Earbuds";
 function HomePage() {
   return (
     <>
-      <div className="bg-gradient-to-r from-black from-60% to-transparent  px-36">
+      <div className="absolute left-0 -z-40 h-screen w-full bg-gradient-to-r from-black from-60% to-transparent"></div>
+      <div className="absolute left-0 -z-40 h-screen w-full bg-gradient-to-t from-cinder-950 from-10% to-transparent"></div>
+      <div className="   px-36">
         <img
           src={UiUxImg}
-          className="absolute left-0 -z-50 h-full w-full"
+          className="absolute left-0 -z-50 h-screen w-screen"
           alt=""
         />
         <div className="flex h-screen justify-center gap-4 pt-28 sm:items-center sm:pt-0">
@@ -43,11 +45,15 @@ function HomePage() {
       </div>
 
       <div className=" container relative m-auto p-16 px-12">
-        <div className=" absolute left-0 top-6 ">
+        <div className=" absolute -left-6 -top-5 bg-cinder-950">
+          <GlowIconContainer materialIcon={<EarbudsIcon />} />
+        </div>
+        <div className=" absolute left-0 top-6 -z-50">
           <LineAnimation
             delay={0}
             height={320}
             tailwindBackgroundColor="bg-cinder-950"
+            beamcolor="bg-gradient-to-b from-violet-500 via-blue-400 to-transparent"
           />
         </div>
         <div className=" absolute -left-6 top-80 bg-cinder-950">
@@ -58,6 +64,7 @@ function HomePage() {
             delay={0}
             height={600}
             tailwindBackgroundColor="bg-cinder-950"
+            beamcolor="bg-gradient-to-b from-blue-500 via-violet-500 to-transparent"
           />
         </div>
         <div className="justify-center gap-10 rounded-3xl sm:flex">
