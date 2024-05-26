@@ -44,7 +44,6 @@ const TopNavigationBar: React.FC = () => {
 
   const closeNavbar = () => setNavbarOpen(false);
 
-  // Close the navbar when the route changes
   const location = useLocation();
   useEffect(() => {
     setNavbarOpen(false);
@@ -53,44 +52,44 @@ const TopNavigationBar: React.FC = () => {
   return (
     <nav
       id="navbar"
-      className={`fixed z-30 w-full transition duration-300 ease-in-out ${
+      className={` absolute z-30 w-full transition duration-300 ease-in-out ${
         scroll ? "bg-white shadow-lg dark:bg-cinder-950" : "bg-transparent"
       }`}
     >
       <div className=" px-4 sm:px-6 xl:px-16">
-        <div className="flex h-16 items-center sm:justify-center">
+        <div className="flex h-16 items-center sm:justify-end">
           <div className="hidden space-x-8 md:flex">
             <Link
               to="/"
-              className="text-lg font-normal text-gray-700 hover:text-gray-900 dark:text-white"
+              className="text-lg font-normal text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-lg font-normal text-gray-700 hover:text-gray-900 dark:text-white"
+              className="text-lg font-normal text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               About
             </Link>
             <Link
               to="/blog"
-              className="text-lg font-normal text-gray-700 hover:text-gray-900 dark:text-white"
+              className="text-lg font-normal text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               Blog
             </Link>
             <Link
               to="/contact"
-              className="text-lg font-normal text-gray-700 hover:text-gray-900 dark:text-white"
+              className="text-lg font-normal text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               Contact
             </Link>
             <Link
               to="/careers"
-              className="text-lg font-normal text-gray-700 hover:text-gray-900 dark:text-white"
+              className="text-lg font-normal text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               Careers
@@ -108,21 +107,21 @@ const TopNavigationBar: React.FC = () => {
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <Link
               to="/"
-              className="block text-lg font-normal text-gray-700 hover:text-gray-900 dark:text-white"
+              className="block text-lg font-normal text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="block text-lg font-medium text-gray-700 hover:text-gray-900 dark:text-white"
+              className="block text-lg font-medium text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               About
             </Link>
             <Link
               to="/blog"
-              className="block text-lg font-medium text-gray-700 hover:text-gray-900 dark:text-white"
+              className="block text-lg font-medium text-gray-700 hover:text-gray-500 dark:text-white"
               onClick={closeNavbar}
             >
               Blog

@@ -2,7 +2,6 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 interface LineAnimationProps {
-  className?: string;
   delay: number;
   height: number;
   tailwindBackgroundColor: string;
@@ -10,7 +9,6 @@ interface LineAnimationProps {
 }
 
 function LineAnimation({
-  className,
   delay,
   height,
   tailwindBackgroundColor,
@@ -30,12 +28,13 @@ function LineAnimation({
 
   return (
     <div className="relative">
-      <div className={` w-1  ${beamcolor} `} style={{ height: `${height}px` }}>
-        .
-      </div>
+      <div
+        className={` w-1  ${beamcolor} `}
+        style={{ height: `${height}px` }}
+      ></div>
       <div ref={divref} className={` rotate-180`}>
         <motion.div
-          className={`absolute top-0 w-1 ${tailwindBackgroundColor}`}
+          className={`absolute top-0 w-1  ${tailwindBackgroundColor}`}
           style={{ height: `${height}px` }}
           variants={{
             hidden: { opacity: 1, height: height },
@@ -47,9 +46,7 @@ function LineAnimation({
           initial="hidden"
           animate={mainControl}
           transition={{ duration: 1, delay: delay }}
-        >
-          .
-        </motion.div>
+        ></motion.div>
       </div>
     </div>
   );
