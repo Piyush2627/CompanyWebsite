@@ -38,10 +38,10 @@ function HomePage() {
             </p>
           </UpAnimation>
           <UpAnimation delay={0.6}>
-            <div className="  m-auto mt-8 w-36 sm:m-0  sm:mt-8">
-              <div className="rounded-lg  bg-black py-2 text-center  text-sm text-white shadow-md shadow-violet-500 ring-1  ring-violet-500">
-                Connect Use
-              </div>
+            <div className="mt-4">
+              <Button borderRadius="1rem" duration={4000}>
+                Borders are cool
+              </Button>
             </div>
           </UpAnimation>
         </div>
@@ -49,12 +49,13 @@ function HomePage() {
 
       <div className=" container m-auto px-24 py-12">
         <div className="w-full text-center text-7xl text-white">
-          Faster. Smarter
+          Faster, Smarter Services
         </div>
-        <div className=" text-center text-amethyst-200">
+        <div className=" text-center text-white">
           <div className="py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            debitis voluptate quas!
+            At <span className="text-amethyst-500">NeuralRoot</span> we
+            specialize in creating cutting-edge web applications that drive
+            business success
           </div>
         </div>
       </div>
@@ -65,28 +66,30 @@ function HomePage() {
           style={{ borderRadius: "86px" }}
           alt=""
         />
-        <div className=" absolute bottom-44 left-[10.7rem] ">
+        <div className=" absolute bottom-28 left-[10.65rem] ">
           <GlowIconContainer materialIcon={<CodeIcon />} />
         </div>
         <div className=" absolute -bottom-56  left-48 -z-20">
           <LineAnimation
             beamcolor="bg-amethyst-500"
             delay={0}
-            height={400}
+            height={330}
             tailwindBackgroundColor="bg-cinder-950"
           />
         </div>
         <div className=" flex px-12 pt-28">
           <div className=" w-1/2 flex-col">
             <div className="bg-gradient-to-r from-amethyst-500 via-amethyst-100 to-amethyst-100 bg-clip-text text-3xl text-transparent">
-              Innovation
+              Empowering Innovation
             </div>
             <div className="text-6xl text-white xl:py-8 xl:text-5xl">
-              Simplify your security with authentication services
+              Transforming Ideas into Cutting-Edge Web and Mobile Experiences
             </div>
             <div className="text-amethyst-300">
-              Define access roles for the end-users, and extend your
-              authorization capabilities to implement dynamic access control.
+              Our team of skilled developers and designers is dedicated to
+              delivering solutions that are not only innovative but also
+              tailored to meet the unique needs of each client. Here’s an
+              overview of our key services:
             </div>
           </div>
           <div className="w-1/2">
@@ -103,32 +106,44 @@ function HomePage() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. aliquam.
         </div>
       </div>
-      <div className="container relative m-auto mt-12 px-24">
-        <div className="absolute  right-40 -z-20">
-          <LineAnimation
-            beamcolor="bg-amethyst-500"
-            delay={0.2}
-            height={70}
-            tailwindBackgroundColor="bg-cinder-950"
-          />
-        </div>
+      <div className="container  relative m-auto mt-12 px-24">
+        <UpAnimation delay={0} className=" absolute right-0 top-64 ">
+          <div className=" mr-40 mt-12">
+            <aside className=" w-full max-w-lg rounded-lg bg-gray-900 p-6 font-mono text-white shadow-md shadow-amethyst-900">
+              <div className="flex items-center justify-between">
+                <div className="flex space-x-2 text-red-500 ">
+                  <div className="h-3 w-3 rounded-full bg-red-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-green-500"></div>
+                </div>
+                <p className="text-sm text-violet-500">bash</p>
+              </div>
+              <div className="mt-4">
+                <p className="text-violet-500">$ npm install @neuralRoot</p>
+                <p className="text-white">+ next@10.2.3</p>
+                <p className="text-white">
+                  added 1 package, and audited 2 packages in 3s
+                </p>
+                <p className="text-violet-500">$</p>
+              </div>
+            </aside>
+          </div>
+        </UpAnimation>
         <div className="w-full rounded-xl border border-gray-800 p-8">
-          <div className="flex">
-            <div className="w-6/12 p-12">
-              <div className="text-2xl font-semibold text-white ">
-                Optimized for security
+          <div className="flex gap-12">
+            <div className="w-6/12 ">
+              <div className="bg-gradient-to-r from-amethyst-500 via-amethyst-100 to-amethyst-100 bg-clip-text text-3xl font-semibold text-transparent">
+                Custom Web Application Development
               </div>
               <div className="py-3.5 text-white">
-                Optimize for user experience and privacy. Use social login
-                integrations, lower user friction, incorporate rich user
-                profiling, and facilitate more transactions.
+                Our expertise lies in building custom web applications from the
+                ground up. We leverage the latest technologies and frameworks to
+                create scalable, secure, and high-performance solutions that
+                align with your business goals. Whether you need a robust
+                enterprise system or a sleek, user-friendly web app, we have the
+                skills and experience to deliver.
               </div>
-              <div className="text-amethyst-200">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente unde earum minus vero illum voluptas ipsum quos at,
-                labore aut animi quidem recusandae officia perspiciatis dolor
-                accusamus blanditiis. Nemo, voluptas?
-              </div>
+
               <div className="mt-4">
                 <Button borderRadius="1rem" duration={4000}>
                   Borders are cool
@@ -140,12 +155,23 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="mt-8 flex gap-8">
+        <div className=" relative mt-36 flex gap-8">
+          <div className=" absolute -top-36 left-24 -z-20">
+            <LineAnimation
+              beamcolor="bg-gradient-to-b from-amethyst-500 via-amethyst-100 to-amethyst-100"
+              delay={0}
+              height={144}
+              tailwindBackgroundColor="bg-cinder-950"
+            />
+          </div>
           <div className="w-8/12 rounded-xl border border-gray-800 p-8">
-            <p className="text-3xl capitalize text-white">heading</p>
-            <p className="w-4/6 text-base font-thin text-amethyst-200">
+            <p className="bg-gradient-to-r from-amethyst-500 via-amethyst-100 to-amethyst-100 bg-clip-text text-3xl font-semibold text-transparent">
+              UX/UI Design
+            </p>
+            <p className="w-4/6 text-base font-thin text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              maxime at, ipsa laborum
+              Our UX/UI designers focus on creating intuitive and visually
+              appealing interfaces that provide an exceptional user experience.
             </p>
             <img src={FeatureImage2} alt="" />
           </div>

@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+// LogoDev
+
+import Logo from "../../assets/coreassets/logo.svg";
 
 const TopNavigationBar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
@@ -57,6 +60,9 @@ const TopNavigationBar: React.FC = () => {
       }`}
     >
       <div className=" px-4 sm:px-6 xl:px-16">
+        <div className="absolute  left-24 top-4">
+          <img src={Logo} alt="" />
+        </div>
         <div className="flex h-16 items-center sm:justify-end">
           <div className="hidden space-x-8 md:flex">
             <Link
